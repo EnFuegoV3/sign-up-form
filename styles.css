@@ -1,0 +1,51 @@
+body {
+    display: flex;
+    /* justify-content: space-between; */
+    flex-direction: row;
+}
+
+img {
+    max-height: 100dvh;
+    max-width: 35%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* border: 1px solid red; */
+    flex: 1;
+    
+}
+
+.info {
+    font-size: 1.2rem;
+    font-weight: 600;
+    max-width: 60ch;
+    margin-top: 5em;
+    line-height: 1.4;
+    margin-left: 2em;
+}
+
+form {
+box-shadow: 5px 5px 10px lightslategray;
+max-height: 30em;
+padding-left: 1em;
+}
+
+fieldset {
+    width: 30em;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+fieldset > div {
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons {
+    margin-left: 2em;
+}
