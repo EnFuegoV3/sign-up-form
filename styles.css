@@ -1,20 +1,55 @@
+@font-face {
+    font-family: odin;
+    src: url(Norse-Bold.otf);
+}
+
+
+
 body {
     display: flex;
     /* justify-content: space-between; */
     flex-direction: row;
 }
 
+
 img {
-    max-height: 100dvh;
+    max-height: 100lvh;
+    width: 35%;
     max-width: 35%;
+    
+}
+
+.logo {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.438);
+    position: absolute;
+    max-height: 12em;
+    width: 35%;
+    margin-top: 20em;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    gap: 10px;
+}
+
+span {
+    font-family: odin, sans-serif;
+    font-size: 4rem;
+}
+
+.logo-image {
+    height: 8em;
+    width: 15%;
 }
 
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: space-evenly;
+    justify-content: center;
     /* border: 1px solid red; */
     flex: 1;
+    gap: 6%;
+    
     
 }
 
@@ -24,28 +59,66 @@ img {
     max-width: 60ch;
     margin-top: 5em;
     line-height: 1.4;
-    margin-left: 2em;
+    margin-left: 3em;
 }
 
-form {
+.form-container {
 box-shadow: 5px 5px 10px lightslategray;
 max-height: 30em;
 padding-left: 1em;
+}
+
+form>p {
+    margin-left: 2em;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 fieldset {
     width: 30em;
     border: 0;
     display: flex;
-    flex-direction: column;
     flex-wrap: wrap;
+    gap: 1em;
+    justify-content: space-evenly;
 }
 
 fieldset > div {
-    display: flex;
-    flex-direction: column;
+    /* display: block; */
+    width: 10rem;
+
+}
+input {
+    width: 12em;
+    height: 2em;
+    border: 1.8px solid rgba(0, 0, 0, 0.068);
+    border-radius: 8px;
+    
+}
+
+input:focus {
+    outline: .5px solid blue;
+}
+
+/* input:valid {
+    outline: 1.8px solid #596D48;
+}
+input:invalid {
+    outline: 1.8px solid red; */
+/* } */ 
+
+label {
+    font-size: 12px;
+    color: rgb(129, 128, 128);
 }
 
 .buttons {
-    margin-left: 2em;
+    margin-left: 4em;
+}
+
+.buttons > button {
+    background-color: #596D48;
+    color: white;
+    border-radius: 8px;
+    padding: 8px;
 }
