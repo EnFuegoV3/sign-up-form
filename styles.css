@@ -122,3 +122,13 @@ label {
     border-radius: 8px;
     padding: 8px;
 }
+
+.error {
+    border: 2px solid red;
+    background-color: rgba(255, 0, 0, 0.288);
+}
+
+.message {
+    font: 12px;
+    color: red;
+}
